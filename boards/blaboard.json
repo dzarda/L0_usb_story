@@ -1,0 +1,38 @@
+{
+    "build": {
+        "core": "stm32",
+        "cpu": "cortex-m0plus",
+        "extra_flags": "-DSTM32L072xx -DSTM32L0",
+        "f_cpu": "32000000L",
+        "mcu": "stm32l072kb",
+        "product_line": "STM32L072xB",
+        "variant": "Generic_L072xx",
+        "hwids": [ [ "0x2C99", "0x0010" ], ["0x0483", "0xDF11"] ]
+    },
+    "debug": {
+        "jlink_device": "STM32L072KB",
+        "openocd_target": "stm32l0",
+        "svd_path": "STM32L07x.svd"
+    },
+    "frameworks": [
+        "arduino",
+        "cmsis",
+        "stm32cube",
+        "libopencm3"
+    ],
+    "name": "Prusa Bla PCB",
+    "upload": {
+        "maximum_ram_size": 20480,
+        "maximum_size": 131072,
+        "protocol": "serial",
+        "protocols": [
+            "blackmagic",
+            "dfu",
+            "jlink",
+            "serial",
+            "stlink"
+        ]
+    },
+    "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l072kb.html",
+    "vendor": "Generic"
+}
